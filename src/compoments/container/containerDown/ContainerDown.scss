@@ -1,0 +1,53 @@
+.wrapper-container-down {
+    margin-top: 70px;
+    .container-comment {
+        .title {
+            font-size: 4rem;
+            font-weight: 600;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .user-comment {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin-top: 40px;
+            img {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                margin: 0 auto;
+            }
+            .comment {
+                padding: 0 15%;
+                text-align: center;
+                font-size: 2rem;
+                margin-top: 25px;
+            }
+            .name {
+                padding-top: 25px;
+                font-size: 1.7rem;
+                font-weight: 700;
+            }
+            .happy-clinet {
+                font-size: 1.6rem;
+                padding-top: 5px;
+                padding-bottom: 25px;
+            }
+        }
+    }
+    .container-category {
+        margin-top: 75px;
+        padding-top: 80px;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        border-top: 1px solid #ccc;
+        padding-bottom: 20px;
+        img {
+            width: 200px;
+            height: 100px;
+        }
+    }
+}
