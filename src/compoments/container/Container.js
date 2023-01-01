@@ -6,22 +6,24 @@ import { faBasketShopping, faRightLeft, faHeart, faEye } from '@fortawesome/free
 import ContainerDown from './containerDown/ContainerDown';
 import './Container.scss';
 function Container() {
-    // tapItem = (e) => {
-    //     e.target.classList.add('active');
-    // };
+    const tapItem = (e) => {
+        console.log(e);
+        // e.target.parentElement.childNodes.classList.remove('active');
+        //e.target.classList.add('active');
+    };
 
     return (
         <div className="wrapper-container">
             <div className="grid">
                 <div className="container-section">
                     <ul className="section-title">
-                        <li className="section-tap-item active" onClick={(e) => this.tapItem(e)}>
+                        <li className="section-tap-item active" onClick={(e) => tapItem(e)}>
                             TOP SELLERS
                         </li>
-                        <li className="section-tap-item " onClick={(e) => this.tapItem(e)}>
+                        <li className="section-tap-item " onClick={(e) => tapItem(e)}>
                             FEATURED
                         </li>
-                        <li className="section-tap-item " onClick={(e) => this.tapItem(e)}>
+                        <li className="section-tap-item " onClick={(e) => tapItem(e)}>
                             MOST REVIEWS
                         </li>
                         <div className="line"></div>

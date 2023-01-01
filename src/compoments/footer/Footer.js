@@ -106,6 +106,79 @@ function Footer() {
                         </ul>
                     </div>
                 </div>
+                <div class="footer-information-down-mobile" hidden>
+                    <details>
+                        <summary>CONTACT US</summary>
+                        <ul>
+                            <li>
+                                <FontAwesomeIcon icon={faLocationDot} /> 200 Lincoln Ave, Sanlinas, CA 93901
+                            </li>
+                            <li>
+                                <FontAwesomeIcon icon={faPhoneAlt} /> <a href="tel:+84334665050">0334665050</a>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon icon={faEnvelope} />
+                                <a href="mailto:gymax@example.com"> gymax@example.com</a>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon icon={faClock} />
+                                9:00 - 22:00 All day
+                            </li>
+                        </ul>
+                    </details>
+
+                    <details>
+                        <summary>MY ACCOUNT</summary>
+                        <ul>
+                            <li>
+                                <a href="/">My Account</a>
+                            </li>
+                            <li>
+                                <a href="/"> Check Out </a>
+                            </li>
+                            <li>
+                                <a href="/">Register</a>
+                            </li>
+                            <li>
+                                <a href="/">Login</a>
+                            </li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>INFORMATION</summary>
+                        <ul>
+                            <li>
+                                <a href="/">About Us</a>
+                            </li>
+                            <li>
+                                <a href="/">Contact Us </a>
+                            </li>
+                            <li>
+                                <a href="/">Teams Of User</a>
+                            </li>
+                            <li>
+                                <a href="/">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>QUICK LINK</summary>
+                        <ul>
+                            <li>
+                                <a href="/">New User</a>
+                            </li>
+                            <li>
+                                <a href="/">Help Center</a>
+                            </li>
+                            <li>
+                                <a href="/">Report Spam</a>
+                            </li>
+                            <li>
+                                <a href="/">FAQs</a>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
             </div>
             <div className="copy-right">
                 Copyright 2022 Gymax <FontAwesomeIcon icon={faCopyright} />
