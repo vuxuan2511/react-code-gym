@@ -106,7 +106,7 @@ function Footer() {
                         </ul>
                     </div>
                 </div>
-                <div class="footer-information-down-mobile" hidden>
+                <div className="footer-information-down-mobile" hidden>
                     <details>
                         <summary>CONTACT US</summary>
                         <ul>
