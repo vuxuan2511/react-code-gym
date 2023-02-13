@@ -22,6 +22,9 @@
             gap: 40px;
             padding-bottom: 55px;
             border-bottom: 1px solid #ccc;
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
     .footer-down {

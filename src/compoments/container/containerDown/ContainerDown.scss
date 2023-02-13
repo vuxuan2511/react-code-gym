@@ -48,6 +48,9 @@
         img {
             width: 200px;
             height: 100px;
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 }

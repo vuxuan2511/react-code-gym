@@ -44,6 +44,10 @@
                 color: white;
                 background-color: transparent;
                 border: 1px solid #ccc;
+                &:hover {
+                    cursor: pointer;
+                    color: #ccc;
+                }
             }
         }
         .banner-up-right {

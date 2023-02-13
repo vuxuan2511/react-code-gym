@@ -37,7 +37,11 @@ function ContainerDown() {
                     {ListCategory &&
                         ListCategory.length > 0 &&
                         ListCategory.map((item, index) => {
-                            return <img className="img-category" src={item.imgSrc} alt={item.id} key={index} />;
+                            return (
+                                <a href="/" key={index}>
+                                    <img className="img-category" src={item.imgSrc} alt={item.id} />
+                                </a>
+                            );
                         })}
                 </div>
             </div>
