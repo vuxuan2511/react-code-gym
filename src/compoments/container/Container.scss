@@ -4,61 +4,35 @@
 
     .container-section {
         padding-top: 3px;
-        .section-title {
-            display: flex;
-            position: relative;
-            border-bottom: 1px solid #ccc;
-            list-style: none;
-            padding-left: 10px;
-            margin-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #ccc;
+        margin: 0 20px;
+        .css-1a4cg4j-MuiButtonBase-root-MuiTab-root {
+            font-size: 1.8rem;
             font-weight: 600;
-            .line {
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                width: 0;
-                height: 6px;
-                border-radius: 15px;
-                background-color: #c23564;
-                transition: all 0.2s ease;
-            }
-            .section-tap-item {
-                min-width: 80px;
-                padding: 16px 20px 11px 20px;
-                font-size: 2rem;
-                display: flex;
-                text-align: center;
-                align-items: center;
-                color: black;
-                background-color: #fff;
-                border-top-left-radius: 5px;
-                border-top-right-radius: 5px;
-                border-bottom: 5px solid transparent;
-                opacity: 0.7;
-                cursor: pointer;
-                transition: all 0.5s ease;
-                &:hover {
-                    opacity: 1;
-                    background-color: rgba(194, 53, 100, 0.05);
-                    border-color: rgba(194, 53, 100, 0.1);
-                }
-            }
-            .active {
-                opacity: 1;
-                color: #dd3032;
-            }
+            opacity: 0.6;
+        }
+        .css-1a4cg4j-MuiButtonBase-root-MuiTab-root.Mui-selected {
+            font-size: 1.8rem;
+            font-weight: 600;
+            opacity: 1;
+            color: #bd2b2b;
+        }
+        .css-11yukd5-MuiTabs-indicator {
+            background-color: #bd2b2b;
         }
     }
     .container-product {
         .list-product {
-            margin-top: 5px;
-
+            margin-top: 40px;
             display: grid;
             grid-template-columns: auto auto auto auto;
             gap: 30px;
+
             .item-product {
                 height: 350px;
-                width: 275px;
+                width: auto;
+                max-width: 275px;
                 display: flex;
                 flex-direction: column;
                 text-align: left;
@@ -76,6 +50,10 @@
                 .name-product {
                     font-size: 1.6rem;
                     padding-top: 30px;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 1;
                 }
                 .price-product {
                     font-weight: 600;
@@ -106,7 +84,7 @@
                     }
                 }
                 &:hover {
-                    box-shadow: 1px 1px 1px 2px #ccc;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                     .more-info-product {
                         display: block;
                     }
@@ -156,14 +134,16 @@
 @media (max-width: 767px) {
     .wrapper-container {
         .container-section {
-            .section-title {
+            .MuiBox-root {
+                display: flex;
                 justify-content: center;
-                .section-tap-item {
-                    font-size: 1.5rem;
-                    padding: 6px 10px 1px 10px;
-                    text-align: center;
-                    align-items: center;
-                }
+            }
+            .css-1a4cg4j-MuiButtonBase-root-MuiTab-root {
+                font-size: 1.4rem;
+                padding: 12px 16px;
+            }
+            .css-1a4cg4j-MuiButtonBase-root-MuiTab-root.Mui-selected {
+                font-size: 1.4rem;
             }
         }
         .container-product {
@@ -179,17 +159,15 @@
         }
     }
 }
-@media (max-width: 350px) {
+@media (max-width: 420px) {
     .wrapper-container {
         .container-section {
-            .section-title {
-                justify-content: center;
-                .section-tap-item {
-                    font-size: 1.3rem;
-                    padding: 6px 10px 1px 10px;
-                    text-align: center;
-                    align-items: center;
-                }
+            .css-1a4cg4j-MuiButtonBase-root-MuiTab-root {
+                font-size: 1.2rem;
+                padding: 12px 6px;
+            }
+            .css-1a4cg4j-MuiButtonBase-root-MuiTab-root.Mui-selected {
+                font-size: 1.2rem;
             }
         }
         .container-product {

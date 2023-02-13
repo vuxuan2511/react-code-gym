@@ -1,33 +1,36 @@
-// import React, { Component } from 'react';
-
+//import React, { useState, SyntheticEvent } from 'react';
+import * as React from 'react';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Box from '@mui/material/Box';
 import { ListProduct } from './dataImage';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBasketShopping, faRightLeft, faHeart, faEye } from '@fortawesome/free-solid-svg-icons';
 import ContainerDown from './containerDown/ContainerDown';
 import './Container.scss';
 function Container() {
-    const tapItem = (e) => {
-        console.log(e);
-        // e.target.parentElement.childNodes.classList.remove('active');
-        //e.target.classList.add('active');
-    };
+    const [value, setValue] = React.useState('one');
 
+    const handleChange = (event: React.SyntheticEvent, newValue: string) => {
+        setValue(newValue);
+    };
     return (
         <div className="wrapper-container">
             <div className="grid">
                 <div className="container-section">
-                    <ul className="section-title">
-                        <li className="section-tap-item active" onClick={(e) => tapItem(e)}>
-                            TOP SELLERS
-                        </li>
-                        <li className="section-tap-item " onClick={(e) => tapItem(e)}>
-                            FEATURED
-                        </li>
-                        <li className="section-tap-item " onClick={(e) => tapItem(e)}>
-                            MOST REVIEWS
-                        </li>
-                        <div className="line"></div>
-                    </ul>
+                    <Box sx={{ width: '100%' }}>
+                        <Tabs
+                            value={value}
+                            onChange={handleChange}
+                            textColor="secondary"
+                            indicatorColor="secondary"
+                            aria-label="secondary tabs example"
+                        >
+                            <Tab value="one" label="TOP SELLERS" />
+                            <Tab value="two" label="FEATURED" />
+                            <Tab value="three" label="MOST REVIEWS" />
+                        </Tabs>
+                    </Box>
                 </div>
                 <div className="container-product">
                     <div className="list-product">
