@@ -225,6 +225,7 @@
         .banner-down,
         .banner-down-mobile {
             margin: 0;
+
             .slide-1,
             .slide-2,
             .slide-3,
@@ -290,13 +291,14 @@
         .banner-down-mobile {
             display: grid;
             grid-template-columns: auto auto;
+            padding: 0 20px;
             .slide-1,
             .slide-2,
             .slide-3,
             .slide-4,
             .slide-5,
             .slide-6 {
-                width: 200px;
+                width: auto;
                 height: 150px;
             }
             .slide-2,
@@ -337,13 +339,14 @@
             justify-content: center;
             margin: 0 auto;
             align-items: center;
+            padding: 0 20px;
             .slide-1,
             .slide-2,
             .slide-3,
             .slide-4,
             .slide-5,
             .slide-6 {
-                width: 300px;
+                width: auto;
                 height: 150px;
             }
             .slide-2,

@@ -31,7 +31,9 @@
         margin-top: 75px;
         display: grid;
         grid-template-columns: auto auto auto auto;
-
+        .contact-us {
+            padding-left: 10px;
+        }
         .contact-us,
         .my-account,
         .information,
@@ -92,6 +94,9 @@
             display: grid;
             grid-template-columns: auto auto;
             gap: 30px;
+            .information {
+                padding-left: 10px;
+            }
         }
     }
 }
